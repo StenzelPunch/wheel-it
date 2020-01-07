@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Wheel-It/static/css/main.683f32e0.chunk.css",
+    "main.js": "/Wheel-It/static/js/main.5352fd7d.chunk.js",
+    "main.js.map": "/Wheel-It/static/js/main.5352fd7d.chunk.js.map",
+    "runtime-main.js": "/Wheel-It/static/js/runtime-main.8078e45b.js",
+    "runtime-main.js.map": "/Wheel-It/static/js/runtime-main.8078e45b.js.map",
+    "static/js/2.2f168dbb.chunk.js": "/Wheel-It/static/js/2.2f168dbb.chunk.js",
+    "static/js/2.2f168dbb.chunk.js.map": "/Wheel-It/static/js/2.2f168dbb.chunk.js.map",
+    "index.html": "/Wheel-It/index.html",
+    "precache-manifest.632dde1db950db673c22e29ab917b352.js": "/Wheel-It/precache-manifest.632dde1db950db673c22e29ab917b352.js",
+    "service-worker.js": "/Wheel-It/service-worker.js",
+    "static/css/main.683f32e0.chunk.css.map": "/Wheel-It/static/css/main.683f32e0.chunk.css.map",
+    "static/js/2.2f168dbb.chunk.js.LICENSE": "/Wheel-It/static/js/2.2f168dbb.chunk.js.LICENSE",
+    "static/media/Home.scss": "/Wheel-It/static/media/start_page_bg.c6a0c237.svg",
+    "static/media/Wheel.scss": "/Wheel-It/static/media/wheel_arrow.17aed943.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8078e45b.js",
+    "static/js/2.2f168dbb.chunk.js",
+    "static/css/main.683f32e0.chunk.css",
+    "static/js/main.5352fd7d.chunk.js"
+  ]
+}
