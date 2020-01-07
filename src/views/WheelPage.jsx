@@ -10,10 +10,8 @@ const s = [
     {label: "600", color: "#00ffff"},
 ]
 
-
-
-
 function WheelPage() {
+    // eslint-disable-next-line
     const [segments, setSegment] = useState(s)
 
     return (
