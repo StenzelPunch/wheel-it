@@ -1,0 +1,8 @@
+@mixin container($conatainer_padding) {
+    min-width: calc(100vw - #{$conatainer_padding} * 2);
+    max-width: 1440px;
+    min-height: calc(100vh - #{$conatainer_padding} * 2);
+    padding: $conatainer_padding;
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,62 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+$start-btn-size: 150px;
+
+.home {
+    background: url("../../assets/images/start_page_bg.svg") no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    @include container(30px);
+
+    .title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        text-transform: uppercase;
+        color: $dark_text;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: $dark_text;
+        margin-top: 22px;
+    }
+
+    .start-btn {
+        display: block;
+        width: $start-btn-size;
+        height: $start-btn-size;
+        position: absolute;
+        bottom: calc(31% - #{$start-btn-size} / 2);
+        left: calc(50% - #{$start-btn-size} / 2);
+        background: white;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: $start-btn-size;
+        text-align: center;
+        color: $orange;
+        transition: .3s;
+
+        &:hover, &:focus {
+            cursor: pointer;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+            transition: .3s;
+            outline: 0;
+        }
+        
+        &:active {
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+            transition: 0;
+        }
+    }
+}
