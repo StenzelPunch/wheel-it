@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/wheel-it/static/css/main.0e4164f8.chunk.css",
-    "main.js": "/wheel-it/static/js/main.5352fd7d.chunk.js",
-    "main.js.map": "/wheel-it/static/js/main.5352fd7d.chunk.js.map",
+    "main.js": "/wheel-it/static/js/main.2de987ea.chunk.js",
+    "main.js.map": "/wheel-it/static/js/main.2de987ea.chunk.js.map",
     "runtime-main.js": "/wheel-it/static/js/runtime-main.d0579257.js",
     "runtime-main.js.map": "/wheel-it/static/js/runtime-main.d0579257.js.map",
     "static/js/2.2f168dbb.chunk.js": "/wheel-it/static/js/2.2f168dbb.chunk.js",
     "static/js/2.2f168dbb.chunk.js.map": "/wheel-it/static/js/2.2f168dbb.chunk.js.map",
     "index.html": "/wheel-it/index.html",
-    "precache-manifest.5674b417b7959ff3b62e05c41fc6f2ae.js": "/wheel-it/precache-manifest.5674b417b7959ff3b62e05c41fc6f2ae.js",
+    "precache-manifest.2a499904c96edc26e8ac24cd25aecbea.js": "/wheel-it/precache-manifest.2a499904c96edc26e8ac24cd25aecbea.js",
     "service-worker.js": "/wheel-it/service-worker.js",
     "static/css/main.0e4164f8.chunk.css.map": "/wheel-it/static/css/main.0e4164f8.chunk.css.map",
     "static/js/2.2f168dbb.chunk.js.LICENSE": "/wheel-it/static/js/2.2f168dbb.chunk.js.LICENSE",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.d0579257.js",
     "static/js/2.2f168dbb.chunk.js",
     "static/css/main.0e4164f8.chunk.css",
-    "static/js/main.5352fd7d.chunk.js"
+    "static/js/main.2de987ea.chunk.js"
   ]
 }
