@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/wheel-it/static/css/main.0e4164f8.chunk.css",
-    "main.js": "/wheel-it/static/js/main.2de987ea.chunk.js",
-    "main.js.map": "/wheel-it/static/js/main.2de987ea.chunk.js.map",
-    "runtime-main.js": "/wheel-it/static/js/runtime-main.d0579257.js",
-    "runtime-main.js.map": "/wheel-it/static/js/runtime-main.d0579257.js.map",
-    "static/js/2.2f168dbb.chunk.js": "/wheel-it/static/js/2.2f168dbb.chunk.js",
-    "static/js/2.2f168dbb.chunk.js.map": "/wheel-it/static/js/2.2f168dbb.chunk.js.map",
-    "index.html": "/wheel-it/index.html",
-    "precache-manifest.367b933cf4c9727191d9671074a562ef.js": "/wheel-it/precache-manifest.367b933cf4c9727191d9671074a562ef.js",
-    "service-worker.js": "/wheel-it/service-worker.js",
-    "static/css/main.0e4164f8.chunk.css.map": "/wheel-it/static/css/main.0e4164f8.chunk.css.map",
-    "static/js/2.2f168dbb.chunk.js.LICENSE": "/wheel-it/static/js/2.2f168dbb.chunk.js.LICENSE",
-    "static/media/Home.scss": "/wheel-it/static/media/start_page_bg.c6a0c237.svg",
-    "static/media/Wheel.scss": "/wheel-it/static/media/wheel_arrow.17aed943.svg"
+    "main.css": "/static/css/main.b022c5aa.chunk.css",
+    "main.js": "/static/js/main.2de987ea.chunk.js",
+    "main.js.map": "/static/js/main.2de987ea.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.23ebc210.js",
+    "runtime-main.js.map": "/static/js/runtime-main.23ebc210.js.map",
+    "static/js/2.2f168dbb.chunk.js": "/static/js/2.2f168dbb.chunk.js",
+    "static/js/2.2f168dbb.chunk.js.map": "/static/js/2.2f168dbb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f44f884e35694c9df7fa99bae35fd210.js": "/precache-manifest.f44f884e35694c9df7fa99bae35fd210.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b022c5aa.chunk.css.map": "/static/css/main.b022c5aa.chunk.css.map",
+    "static/js/2.2f168dbb.chunk.js.LICENSE": "/static/js/2.2f168dbb.chunk.js.LICENSE",
+    "static/media/Home.scss": "/static/media/start_page_bg.c6a0c237.svg",
+    "static/media/Wheel.scss": "/static/media/wheel_arrow.17aed943.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d0579257.js",
+    "static/js/runtime-main.23ebc210.js",
     "static/js/2.2f168dbb.chunk.js",
-    "static/css/main.0e4164f8.chunk.css",
+    "static/css/main.b022c5aa.chunk.css",
     "static/js/main.2de987ea.chunk.js"
   ]
 }
