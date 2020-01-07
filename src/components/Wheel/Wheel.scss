@@ -11,8 +11,11 @@ $btn-size__480: 70px;
     align-items: center;
 
     &-svg {
+     
+    }
+    
+    &-arrow {
         position: relative;
-
         &:before {
             content: "";
             background: #916dd5;
@@ -23,6 +26,7 @@ $btn-size__480: 70px;
             height: 15px;
             background: url("../../assets/images/wheel_arrow.svg") no-repeat 50% 50%;
             margin-left: -7px;
+            z-index: 100;
         }
     }
     &-btn {
@@ -36,8 +40,8 @@ $btn-size__480: 70px;
         background: #ffffff;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
         position: absolute;
-        top: calc(50% - $btn-size / 2);
-        left: calc(50% - $btn-size / 2);
+        top: calc(50% - #{$btn-size} / 2);
+        left: calc(50% - #{$btn-size} / 2);
         border-radius: 50%;
         border: none;
         text-transform: uppercase;
@@ -55,6 +59,12 @@ $btn-size__480: 70px;
 
         &:active {
             box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+            transition: 0.2s;
+        }
+
+        &:disabled {
+            color: #ffffff;
+            transition: 0.2s;
         }
     }
 }
@@ -65,7 +75,7 @@ $btn-size__480: 70px;
         width: $btn-size__480;
         height: $btn-size__480;
         line-height: $btn-size__480;
-        top: calc(50% - $btn-size__480 / 2);
-        left: calc(50% - $btn-size__480 / 2);
+        top: calc(50% - #{$btn-size__480} / 2);
+        left: calc(50% - #{$btn-size__480} / 2);
     }
 }

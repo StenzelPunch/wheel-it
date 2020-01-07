@@ -1,5 +1,7 @@
 import React from "react";
 import { SVG, PathArray } from "@svgdotjs/svg.js";
+import { gsap } from "gsap";
+import classNames from 'classnames';
 import "./Wheel.scss";
 
 const pi = Math.PI;
@@ -15,6 +17,39 @@ class Wheel extends React.Component {
         this.h = this.w;
         this.r = this.w / 2;
         this.c = { x: this.w / 2, y: this.h / 2 };
+
+        this.currAngle = 0
+        this.spin = this.spin.bind(this);
+
+        this.state = {
+            btnDisable: false,
+        }
+        
+    }
+
+    render() {
+        const btnClass = classNames({
+            'wheel-btn': true,
+            'wheel-btn__disable': this.state.btnDisable
+        })
+
+        return (
+            <div className="wheel">
+                <div className="wheel-arrow">
+                    <div
+                        className="wheel-svg"
+                        id="wheel-svg"
+                        ref={ref => {
+                            this.node = ref;
+                            this.draw();
+                        }}
+                    ></div>
+                </div>
+                <button onClick={this.spin} className={btnClass} disabled={this.state.btnDisable}>
+                    roll
+                </button>
+            </div>
+        );
     }
 
     componentDidMount() {
@@ -23,29 +58,26 @@ class Wheel extends React.Component {
             .viewbox((this.w / 2) * -1, (this.h / 2) * -1, this.w, this.h);
     }
 
-    resize() {
-        this.w = getWidth();
-        this.h = this.w;
-        svg.size(this.h, this.w);
+    spin() {
+        const spinCount = 6;
+        const spinAngle = 360 * spinCount + getRandDeg() + this.currAngle;
+
+        this.currAngle = spinAngle % 360;
+
+        this.disableButton();
+
+        gsap.to(svg.node, {
+            rotation: spinAngle,
+            ease: "power2.inOut",
+            duration: 10,
+            onComplete: () => {
+                gsap.to(svg.node, { rotation: this.currAngle, ease: "linear", duration: 0 });
+                this.disableButton();
+            }
+        });
     }
 
-    render() {
-        return (
-            <div className="wheel">
-                <div className="wheel-arrow"></div>
-                <div
-                    className="wheel-svg"
-                    ref={ref => {
-                        this.node = ref;
-                        this.draw(this.node);
-                    }}
-                ></div>
-                <button className="wheel-btn">roll</button>
-            </div>
-        );
-    }
-
-    draw(e) {
+    draw() {
         const segments = this.props.segments;
         const deg = 360 / segments.length; //segment "width"
         const r = this.r;
@@ -81,6 +113,18 @@ class Wheel extends React.Component {
             };
         });
     }
+
+    disableButton() {
+        this.setState({
+            btnDisable: !this.state.btnDisable
+        })
+    }
+
+    resize() {
+        this.w = getWidth();
+        this.h = this.w;
+        svg.size(this.h, this.w);
+    }
 }
 
 function deg2rad(deg) {
@@ -88,6 +132,13 @@ function deg2rad(deg) {
 }
 
 function getWidth() {
-    return window.innerWidth > window.innerHeight ? window.innerHeight * 0.93 : window.innerWidth * 0.93;
+    const width = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
+    return width * 0.93
 }
+
+function getRandDeg() {
+    return Math.round(-0.5 + Math.random() * (360 + 1));
+}
+
+
 export default Wheel;
